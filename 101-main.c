@@ -15,7 +15,6 @@ listint_t *create_listint(const int *array, size_t size)
 listint_t *list;
 listint_t *node;
 int *tmp;
-
 list = NULL;
 while (size--)
 {
@@ -48,7 +47,7 @@ if (!list)
 return (1);
 print_list(list);
 printf("\n");
-insertion_sort_list(&list);
+cocktail_sort_list(&list);
 printf("\n");
 print_list(list);
 return (0);
