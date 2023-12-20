@@ -2,6 +2,12 @@
 #define _SORT_H_
 #include <stddef.h>
 
+
+
+
+#define INCREMENT 1
+#define DECREMENT -1
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -45,6 +51,9 @@ void shell_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void swap_nodes(listint_t **list, listint_t *node);
+listint_t *get_dlistint_lelem(listint_t *h);
+int getCantRep(int num);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
